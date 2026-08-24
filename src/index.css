@@ -1,6 +1,4 @@
-@import "tailwindcss";
-
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import "tailwindcss";
 
@@ -9,6 +7,11 @@
   --color-gray-20: #F8F4EB;
   --color-gray-50: #EFE6E6;
   --color-gray-100: #DFCCCC;
+  --color-primary-100: #FFE1E0;
+  --color-primary-300: #FFA6A3;
+  --color-primary-500: #FF6B66;
+  --color-secondary-400: #FFCD5B;
+  --color-secondary-500: #FFC132;
 
   --background-image-gradient-yellowred: linear-gradient(90deg, #FFC837 0%, #FF8008 100%);
   --background-image-mobile-home: url('./assets/HomePageGraphic.png');
@@ -24,4 +27,12 @@
   --breakpoint-xs: 480px;
   --breakpoint-sm: 768px;
   --breakpoint-md: 1060px;
+}
+
+html, body, #root, .app {
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+  font-family: "DM Sans", sans-serif;
+  @apply text-gray-500;
 }
