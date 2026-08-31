@@ -6,3 +6,9 @@ export const SelectedPage = {
 } as const;
 
 export type SelectedPage = (typeof SelectedPage)[keyof typeof SelectedPage];
+
+export interface BenefitType {
+  icon: JSX.Element;
+  title: string;
+  description: string;
+}
