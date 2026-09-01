@@ -1,7 +1,7 @@
 import HText from "@/shared/HText"
 import { SelectedPage } from "@/shared/types"
 import type { ClassType } from "@/shared/types";
-import { motion } from "framer-motion"
+import { motion } from "motion/react"
 import image1 from "@/assets/image1.png";
 import image2 from "@/assets/image2.png";
 import image3 from "@/assets/image3.png";
@@ -10,7 +10,7 @@ import image5 from "@/assets/image5.png";
 import image6 from "@/assets/image6.png";
 import Class from "@/scenes/ourClasses/Class"
 
-  const classes: Array<ClassType> = [
+const classes: Array<ClassType> = [
   {
     name: "Weight Training Classes",
     description:

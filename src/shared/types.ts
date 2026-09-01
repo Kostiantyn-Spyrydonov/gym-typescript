@@ -1,3 +1,5 @@
+import type { JSX } from "react";
+
 export const SelectedPage = {
   Home: "home",
   Benefits: "benefits",

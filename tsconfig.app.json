@@ -11,6 +11,11 @@
     "allowArbitraryExtensions": true,
     "skipLibCheck": true,
 
+    /* Type-safety */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,

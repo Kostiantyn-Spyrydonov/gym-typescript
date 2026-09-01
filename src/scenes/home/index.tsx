@@ -6,14 +6,14 @@ import HomePageGraphic from "@/assets/HomePageGraphic.png";
 import SponsorRedBull from "@/assets/SponsorRedBull.png";
 import SponsorForbes from "@/assets/SponsorForbes.png";
 import SponsorFortune from "@/assets/SponsorFortune.png";
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 }
 
 const Home = ({ setSelectedPage }: Props) => {
-  const isAboveMediumScreens = useMediaQuery("(min-width:1060px)")
+  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)")
 
   return (
     <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:p-0">
@@ -56,7 +56,7 @@ const Home = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0},
             }}
           >
-            <ActionButton>
+            <ActionButton setSelectedPage={setSelectedPage}>
               Join now
             </ActionButton>
             <a className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"

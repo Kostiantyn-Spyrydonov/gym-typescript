@@ -4,7 +4,7 @@ import {
   UserGroupIcon,
   AcademicCapIcon, 
 } from "@heroicons/react/24/solid"
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import HText from "@/shared/HText";
 import Benefit from "./Benefit";
 import BenefitsPageGraphic from "@/assets/BenefitsPageGraphic.png"
@@ -42,7 +42,7 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 }
 
-const Benefits = (setSelectedPage: Props) => {
+const Benefits = ({ setSelectedPage }: Props) => {
   return (
     <section id="benefits" className="mx-auto min-h-full w-5/6 py-20">
       <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}>
@@ -67,8 +67,7 @@ const Benefits = (setSelectedPage: Props) => {
         <motion.div className="mt-5 items-center justify-between gap-8 md:flex"
           initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }}
           variants={container}>
-          {benefits.map((benefit: BenefitType
-          ) => (
+          {benefits.map((benefit: BenefitType) => (
             <Benefit
               key={benefit.title}
               icon={benefit.icon}

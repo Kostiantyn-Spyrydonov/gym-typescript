@@ -6,6 +6,9 @@
     "types": ["node"],
     "skipLibCheck": true,
 
+    /* Type-safety */
+    "strict": true,
+
     /* Bundler mode */
     "module": "nodenext",
     "allowImportingTsExtensions": true,
